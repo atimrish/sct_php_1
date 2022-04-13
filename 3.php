@@ -2,6 +2,20 @@
 
 $page = 3;
 
+$a = rand(-10, 10);
+$b = rand(-10, 10);
+
+echo 'a = ' . $a . '<br>';
+echo 'b = ' . $b . '<br>';
+
+if (($a > 0) && ($b > 0)) {
+    echo 'Сумма: ' . ($a + $b);
+}
+else {
+    echo 'Разность: ' . (max($a, $b) - min($a, $b));
+}
+
+
 ?>
 
 <!doctype html>
@@ -14,6 +28,14 @@ $page = 3;
     <title>Document</title>
 </head>
 <body>
+
+<h2>Navigation</h2>
+<ul>
+    <li><a href="1.php" <?php if($page === 1) : ?> style="font-weight: 600" <?php endif; ?>  >1.php</a></li>
+    <li><a href="2.php" <?php if($page === 2) : ?> style="font-weight: 600" <?php endif; ?> >2.php</a></li>
+    <li><a href="3.php" <?php if($page === 3) : ?> style="font-weight: 600" <?php endif; ?> >3.php</a></li>
+</ul>
+
 
 </body>
 </html>
