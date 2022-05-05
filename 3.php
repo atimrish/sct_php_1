@@ -10,6 +10,9 @@ $array = [
 
 foreach ($array as $key => $value) {
 
-    echo $value;
+    echo $key . '<br>';
+    foreach ($value as $subValue) {
+       echo '&emsp;&emsp;&emsp;&emsp;' . $subValue . '<br>';
+    }
 
 }

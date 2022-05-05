@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -14,11 +11,13 @@
 <body>
 
 <h2>Новости</h2>
+
 <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+    <li><a href="https://kaspyinfo.ru/news/gorod/77125" target="_blank">первый</a></li>
+    <li><a href="https://ura.news/news/1052550890" target="_blank">второй</a></li>
+    <li><a href="https://kaspyinfo.ru/news/gorod/77148" target="_blank">третий</a></li>
 </ul>
 
 </body>
 </html>
+
