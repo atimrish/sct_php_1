@@ -8,26 +8,21 @@ $array = [
 
 ];
 
-sortByPrice($array);
-
-print_r($array);
-
-
-function sortByPrice(&$array)
+for ($i = 0; $i < count($array); $i++)
 {
-    for ($i = 0; $i < count($array); $i++)
+    for ($j = 0; $j < count($array); $j++)
     {
-        for ($j = $i; $i < count($array); $j++)
+        if ($array[$i]['price'] < $array[$j]['price'])
         {
-            if($array[$i]['price'] < $array[$j]['price']) {
-                swap($array[$i], $array[$j]);
-            }
+            swap($array[$i], $array[$j]);
         }
-
     }
-
-
 }
+
+echo '<pre>';
+print_r($array);
+echo '</pre>';
+
 
 function swap(&$a, &$b)
 {
