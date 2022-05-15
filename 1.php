@@ -1,6 +1,8 @@
 <?php
 
-
+$login = $_GET['login'];
+$pass = $_GET['pass'];
+$age = $_GET['age'];
 
 ?>
 
@@ -23,5 +25,8 @@
 
 
     <input type="submit" value="Отправить">
+    <br>
+    <br>
 
+    <a href="1.php">Очистка</a>
 </form>
